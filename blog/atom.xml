@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://your-docusaurus-test-site.com/blog</id>
+    <id>https://your-docusaurus-test-site.com/Blog/blog</id>
     <title>Hello! I'm Neel Blog</title>
     <updated>2022-11-03T12:01:30.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://your-docusaurus-test-site.com/blog"/>
+    <link rel="alternate" href="https://your-docusaurus-test-site.com/Blog/blog"/>
     <subtitle>Hello! I'm Neel Blog</subtitle>
-    <icon>https://your-docusaurus-test-site.com/img/favicon.ico</icon>
+    <icon>https://your-docusaurus-test-site.com/Blog/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Nothing here, check it out later]]></title>
         <id>/AboutMe</id>
-        <link href="https://your-docusaurus-test-site.com/blog/AboutMe"/>
+        <link href="https://your-docusaurus-test-site.com/Blog/blog/AboutMe"/>
         <updated>2022-11-03T12:01:30.000Z</updated>
         <summary type="html"><![CDATA[description]]></summary>
         <content type="html"><![CDATA[<p>shu, get out</p>]]></content>
