@@ -1,10 +1,10 @@
 ---
-title: my hello page title
-description: my hello page description
+title: Nothing here, check it out later
+description: description
 hide_table_of_contents: true
 authors: [Neel]
 ---
 
 # About Me
 
-How are you?
+shu, get out
