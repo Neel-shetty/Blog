@@ -7,7 +7,7 @@ tags: [ReactNative, FlatList]
 
 # Select an Item in a FlatList - React Native
 
-I recently wanted to implement the above mentioned feature but didnt find good quality videos so I am going to write one. For Begginers as a Begginer, not a Pro.
+I recently wanted to implement the above mentioned feature in my app but didnt find good quality videos so I am going to write one. For Begginers as a Begginer, not a Pro.
 
 ### Step 1 - Create a Flatlist
 
@@ -117,6 +117,44 @@ Here we do a few things which let us select the item we want, let me explain how
 - After the the `isSelected.map()` is finished iterating through all the values in the data and only setting `selected:true` for the item the user selected. We set the value of `isSelected` as the data we stored in the `tempArray` using `setIsSelected(tempArray)` 
 
 ### Step 3 - use the data stored in the state to make the change you want to the selected item
+
+Currently, The value of `selected: ` of the selected item is set as true is set as `true`, we can use this to make change as needed to our item. You can check the data by `console.log(isSelected)` or `console.log(isSelected.selected)`
+
+Inside the FlatList you can checked if the item is selected by:
+```
+  <FlatList
+  data={YourData}
+  renderItem={({ item, index }) => {
+    return (
+      <TouchableOpacity onPress={YourFunction(index)}>
+        <TheComponentYouWantToRender
+          passYourData={item}
+          style={{
+            backgroundColor: isSelected[index].selected
+              ? "violet"
+              : "pink",
+          }}
+        />
+      </TouchableOpacity>
+    );
+  }}
+/>
+```
+
+- Accessing the current item using its index
+- Checking if the item is selected or not by setting index as the array element id as index `isSelected[index]`.
+- Example, you can now set the background color of the item depending on if its selected or not by using the `?` operator `backgroundColor: isSelected[index].selected
+              ? "violet"
+              : "pink"
+`
+. The background color will be violet if the item is selected, if it's not selected the background color will be pink.
+
+### Step 4 - Go code it :gun:
+Now that you're equipped with the insane skill of selecting an item in a a FlatList, go become a millionaire.  
+&nbsp;
+&nbsp;
+
+If there are any errors in the guide, please write to [my email](mailto:neelnarayanshetty@gmail.com)
 
 
 
